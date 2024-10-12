@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h2, h4, a {
+    font-family: "Quicksand", sans-serif;
+}
+
+h1, p, ul, ol{
+    font-family: "Indie Flower", cursive;
+}
+
+main {
+    width: 1366px;
+    height: auto;
+    overflow: hidden;
+    background-image: url('../images/fondofresa.avif');
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(156, 219, 176);
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background-color: pink;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: azure;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.6s, transform 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+    background-color: rgb(255, 136, 196);
+    color: rgb(185, 233, 204);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: transform 0.3s;
+}
+
+a:focus {
+    outline: 2px solid rgb(138, 238, 178);
+    outline-offset: 4px; 
+}
+
+section {
+    width: 1346px;
+    margin-left: 10px;
+    margin-top: 20px;
+    background: linear-gradient(100deg, rgba(89, 164, 118, 0.755), rgba(185, 233, 204, 0.755));
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section .titulo{
+    width: 1346px;
+    text-align: center;
+    color: rgb(255, 0, 106);
+    font-size: 35px;
+}
+
+section a{
+    color: rgb(255, 0, 106);
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+    transition: background-color 0.6s, transform 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: start;
+}
+
+section a:hover{
+    background-color: rgba(100, 148, 119, 0.755);
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+section a:focus {
+    outline: 2px solid rgb(92, 127, 106);
+    outline-offset: 4px; 
+}
+
+section .izquierda{
+    width: 600px;
+    height: 1100px;
+    float: left;
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 69, 131, 0.701);
+    border-radius: 8px;
+}
+
+.izquierda .texto1{
+    width: 550px;
+    height: 900px;
+    margin-left: 15px;
+    padding: 10px;
+    background-color: rgba(255, 192, 203, 0.7015);
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+section .derecha{
+    width: 720px;
+    height: 1100px;
+    float: right;
+    position: relative;
+    margin-top: 20px;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 69, 131, 0.701);
+    border-radius: 8px;
+}
+
+.derecha .texto2{
+    width: 620px;
+    height: 550px;
+    margin-left: 40px;
+    padding: 10px;
+    background-color: rgba(255, 192, 203, 0.7015);
+    border-radius: 8px;
+}
+
+.carrera{
+    text-align: center;
+}
+
+.derecha .imagen{
+    width: 620px;
+    height: 350px;
+    margin-top: 15px;
+    margin-left: 40px;
+    padding: 10px;
+    background-color: rgba(255, 192, 203, 0.7015);
+    border-radius: 8px;
+    text-align: center;
+}
+
+footer {
+    height: 320px;
+    width: 1346px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(116, 161, 134);
+    float: left;
+}
+
+footer .texto3{
+    width: 1250px;
+    height: 200px;
+    margin-left: 58px;
+    padding: 10px;
+    background-color: rgb(152, 201, 172);
+    border-radius: 8px;
+}

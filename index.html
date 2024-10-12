@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header id="inicio"><img src="images/Logo.png" alt=""></header>
+        <nav>
+            <a href="#tema1">Tema 1</a>
+            <a href="#tema2">Tema 2</a>
+            <a href="#tema3">Tema 3</a>
+            <a href="#tema4">Tema 4</a>
+            <a href="#tema5">Tema 5</a>
+            <a href="#tema6">Carrera</a>
+        </nav>
+        <section>
+            <div class="titulo">
+                <h1 id="tema1">°❀⋆.ೃ࿔*:･ Position ･:*ೃ࿔.⋆❀°</h1>
+                <a href="#inicio">Volver al inicio</a>
+                <br><br>
+            </div>
+            <div class="izquierda">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <ul class="lista">
+                        <li>La propiedad de posicion especifica el tipo de metodo de posicionamiento utilizado para un
+                            elemento.</li>
+                        <li>Los elementos se pocicionan usando las propiedades top, bottom, left, right.</li>
+                        <li><b>Static: </b>Flujo normal, sin desplazamientos.</li>
+                        <li><b>Relative: </b>Desplazamiento desde la posición original.</li>
+                        <li><b>Fixed: </b>Fijo al viewport, independientemente del scroll.</li>
+                        <li><b>Absolute: </b>Posición exacta dentro del contenedor más cercano.</li>
+                        <li><b>Sticky: </b>Se adhiere en el scroll, alternando entre relative y fixed.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Apuntes de la clase</h2>
+                <div class="texto2">
+                    <p><b>Propiedades position:</b> static, relative, fixed, absolut, sticky.</p>
+                    <p><b>Static:</b> no se ve afectado por las propiedades, top, bottom, left, right, va con el flujo
+                        normal
+                        de la pagina, esta puesta predeterminadamente.</p>
+                    <p><b>Relative:</b> Un elemento con position: relative; está posicionado en relación con su posición
+                        normal.</p>
+                    <p><b>Fixed:</b> Hace que un elemento se coloque respecto al viewport, Le dices dónde posicionarse
+                        al
+                        elemento, y se queda ahí mientras el usuario hace scroll.</p>
+                    <p><b>Absolut:</b> El posicionamiento absoluto se emplea para establecer de forma exacta la posición
+                        en la
+                        que se muestra en la caja de un elemento.</p>
+                    <p><b>Sticky:</b> Se posiciona en función de la posición de desplazamiento del usuario.</p>
+                </div>
+                <div class="imagen">
+                    <img src="images/position.webp" alt="" height="325px">
+                </div>
+            </div>
+            <footer>
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    <p>Estas propiedades permiten controlar la disposición y comportamiento de los elementos en la
+                        página web, facilitando la creación de diseños responsivos y dinámicos.</p>
+                </div>
+            </footer>
+        </section>
+        <section>
+            <div class="titulo">
+                <h1 id="tema2">°❀⋆.ೃ࿔*:･ Display ･:*ೃ࿔.⋆❀°</h1>
+                <a href="#inicio">Volver al inicio</a>
+                <br><br>
+            </div>
+            <div class="izquierda">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <ul class="lista">
+                        <li><b>Propiedad display: block;</b> Siempre comienza en una nueva línea y ocupa todo el ancho
+                            disponible (se extiende hacia la izquierda y hacia la derecha tanto como sea posible).</li>
+                        <li><b>Propiedad display: inline; </b>Un elemento inline no comienza en una nueva línea y solo
+                            ocupa el ancho que sea necesario. Ej: span a img</li>
+                        <li><b>Propiedad display: inline-block; </b>Permite establecer un ancho y una altura en el
+                            elemento. Además, se respetan los margin y padding, que con display: inline no son
+                            respetados. No agrega un salto de línea después del elemento, por lo que el elemento puede
+                            alinearse junto a otros elementos.</li>
+                        <li><b>Propiedad display: none; </b>Se usa comúnmente en JavaScript para ocultar y mostrar
+                            elementos cuando el usuario realiza alguna acción como pulsar un botón o un enlaces sin
+                            eliminarlos ni crearlos nuevamente. Hace que el elemento no genere ninguna caja. El
+                            resultado es que el elemento desaparece por completo de la pagina y no ocupa sitio, por lo
+                            que los elementos adyacentes ocupan su lugar.</li>
+                        <li><b>Propiedad display: table; </b>Permite asignar un comportamiento de tabla a los elementos
+                            que hay dentro (anidados a la etiqueta donde estas colocando el display: table). Dentro de
+                            este elemento de pueden usar otra series de valores de display que corresponden con los
+                            roles de distintas etiquetas HTML que usas en las tablas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Apuntes de la clase</h2>
+                <div class="texto2">
+                    <p>Un elemento con display: block; siempre comienza en una nueva línea. Ocupa todo el ancho
+                        disponible del contenedor (se extiende hacia la izquierda y derecha).</p>
+                    <p>Un elemento inline no comienza en una nueva línea. Solo ocupa el ancho necesario para su
+                        contenido. Los márgenes y el padding no se respetan en elementos inline</p>
+                    <p>dun elemento inline-block combina características de inline y block que permite establecer un
+                        ancho y altura en el elemento. los margenes y Padding se respetan, a diferencia de inline.
+                    </p>
+                    <p>El elemento display: none oculta un elemento completamente del flujo del documento.</p>
+                    <p>Un elemento display: table asigna un comportamiento de tabla al elemento y los elementos hijos se
+                        comportan como celdas de una tabla.</p>
+                </div>
+                <div class="imagen">
+                    <img src="images/display.jpg" alt="" height="325px">
+                </div>
+            </div>
+            <footer>
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    <p> Las propiedades de display son fundamentales en CSS, ya que determinan cómo se comportan y
+                        presentan los elementos en una página web. En resumen, entender y utilizar correctamente las
+                        propiedades de display es esencial para cualquier desarrollador web que busque crear diseños
+                        efectivos, accesibles y atractivos.</p>
+                </div>
+            </footer>
+        </section>
+        <section>
+            <div class="titulo">
+                <h1 id="tema3">°❀⋆.ೃ࿔*:･ Animation ･:*ೃ࿔.⋆❀°</h1>
+                <a href="#inicio">Volver al inicio</a>
+                <br><br>
+            </div>
+            <div class="izquierda">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <ul class="lista">
+                        <li>CSS permite animar la mayoria de los elementos HTML sin usar javaScript.</li>
+                        <li>Cuando especifica estilos CSS dentro de la regla @keyframes, la animacion cambiara del
+                            estilo actual al estilo nuevo.</li>
+                        <li>Para que una animacion funcione, se debe vincular la animacion a un elemento.</li>
+                        <li><b>animation-duration:</b> especifica cuanto tiempo debe transcurrir una animacion para
+                            completar un ciclo.</li>
+                        <li><b>animation-iteration-count:</b> especifica el numero de veces que se debe reproducir una
+                            animacion. se expresa con numeros cerrados y se puede usar tambien un infinito.</li>
+                        <li><b>animation-delay:</b> especifica un retraso para el inicio de una animacion. Se expresa en
+                            sefundos. Se pueden utilizar unidades negativas.</li>
+                        <li><b>animation-play-state:</b> especifica si la animacion se esta ejecutando o esta en pausa.
+                        </li>
+                        <li><b>animation-timing-function:</b> especifica la curva de velocidad de la animacion.
+                            <ul>
+                                <li><b>linear: </b>especifica una animacion con la misma velocidad de principio a fin.
+                                </li>
+                                <li><b>ease: </b>especifica una animacion con un inicio lento, luego rapido y luego
+                                    termina lentamente (por defecto)</li>
+                                <li><b>ease-in: </b>especifica una animacion con un inicio lento.</li>
+                                <li><b>ease-out: </b>especifica una animacion con un final lento.</li>
+                                <li><b>ease-in-out: </b>especifica una animacion con un inicio y un final lentos.</li>
+                                <li><b>cubic-bezier(n, n, n, n): </b>permite definir sus propios valores en una funcion
+                                    cubic-bezier</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Apuntes de la clase</h2>
+                <div class="texto2">
+                    <p><b>Sintaxis</b></p>
+                    <p>@keyframes-> Regla @keyframes, "nombre"-> Nombre de la animacion, from{ }-> Estilo actual, to{
+                        }->
+                        Estilo nuevo</p>
+                    <p><b>Sintaxis por porcentaje</b></p>
+                    <p>@keyframes-> Regla @keyframes, "nombre"-> Nombre de la animacion, 0%{ }-> Estilo actual, 50%{
+                        }-> Estilo nuevo al 50%, 100%{ }-> Estilo nuevo al 100%.</p>
+                </div>
+                <div class="imagen">
+                    <img src="images/animation1.png" alt="" height="325px">
+                    <img src="images/animation2.png" alt="" height="325px">
+                </div>
+            </div>
+            <footer>
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    <p>En resumen, las animaciones en CSS mejoran la interacción y la apariencia de las páginas web,
+                        haciendo que sean más atractivas y funcionales.</p>
+                </div>
+            </footer>
+        </section>
+        <section>
+            <div class="titulo">
+                <h1 id="tema4">°❀⋆.ೃ࿔*:･ Nuevas propiedades CSS ･:*ೃ࿔.⋆❀°</h1>
+                <a href="#inicio">Volver al inicio</a>
+                <br><br>
+            </div>
+            <div class="izquierda">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <ul>
+                        <li>Es un intento por reducir el uso de codigo javaScript y para estandarizar funciones
+                            populares,
+                            CSS3 no solo cubre diseño y estilos web sino tambien forma y movimiento.</li>
+                        <li><b>Border-radius corner-radius:</b> esta propiedad genera esquinas redondeadas para la caja
+                            formada por el elemento, posee dos parametros diferentes que dan forma a la esquina
+                            (horizontal y vertical) se puede llegar a crear hasta un elipse.</li>
+                        <li><b>Box-shadow: </b>esta propiedad crea sombras, puede tomar cinco parametros (el color, el
+                            desplazamiento horizontal/vertical, valor de difuminacion y un inset para una sombra mas
+                            intensa).</li>
+                        <li><b>@font-face: </b>esta regla nos permite cargar cualquier fuente que necesitemos.</li>
+                        <li><b>linear-gradient: </b>esta funcion puede ser aplicada a las propiedades background-image
+                            para generr un gradiente lineal.</li>
+                        <li><b>RGBA: </b>esta funcion es una mejora de rgb() con un canal alfa que especifica la
+                            opacidad de un color.</li>
+                        <li><b>HSLA: </b>los valores de color HSLA son una extension de los valores de color HSL con un
+                            canal alfa, que especifica la opacidad de un color.</li>
+                        <li><b>Outline: </b>esta propiedad fue mejorada con la incorporacion de otra llamada
+                            outline-offset. ambas generan un segundo borde alejado del borde original del elemento.</li>
+                        <li><b>Transform: </b>esta propiedad modifica la forma de un elemento, utiliza cuatro funciones
+                            basicas (scale, rotate, skew y translate).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Apuntes de la clase</h2>
+                <div class="texto2">
+                    <p>Este nivel de cambio convierte CSS3 en una tecnologia practicamente inedita comparada con
+                        versiones anteriores.</p>
+                    <p>Para algunas propiedades se deben usar los prefijos -moz-, -o-, y -webkit- para que funcionen en
+                        navegadores basados en motores Gecko y WebKit, como Firefox, Safari y google Chrome.</p>
+                    <p>Podemos crear desde esquinas redondeadas y sombras hasta transformaciones y repposicionamiento de
+                        los elementos ya presentados en pantalla, cada posible efecto aplicado previamente utilizando
+                        javaScript fue cubierto.</p>
+                    <p><b>border-radius: </b>Npx/Npx;</p>
+                    <p><b>box-shadow: </b>#000000 Npx Npx Npx inset;</p>
+                    <p><b>linear-gradient: </b>(top, #FFFFFF 50%, #000000 90%);</p>
+                    <p><b>background-color: </b>rgba(255, 0, 0, 0.3);</p>
+                    <p><b>background-color: </b>hsla(120, 100%, 50%, 0.3);</p>
+                    <p><b>outline: </b>1px solid #000000;</p>
+                    <p><b>outline-offset: </b>10px;</p>
+                </div>
+                <div class="imagen">
+                    <img src="images/imagen de propiedades.png" alt="" height="325px">
+                </div>
+            </div>
+            <footer>
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    <p>Estas características de CSS3 enriquecen el diseño web, permitiendo crear interfaces más
+                        interactivas y estéticamente agradables sin depender tanto de JavaScript.</p>
+                </div>
+            </footer>
+        </section>
+        <section>
+            <div class="titulo">
+                <h1 id="tema5">°❀⋆.ೃ࿔*:･ Referencias avanzadas ･:*ೃ࿔.⋆❀°</h1>
+                <a href="#inicio">Volver al inicio</a>
+                <br><br>
+            </div>
+            <div class="izquierda">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <ul class="lista">
+                        <li><b>Atributo id: </b>es como un nombre que identifica al elemento. el valor de este atributo
+                            no puede ser duplicado. este nombre debe ser unico en todo el documento.</li>
+                        <li><b>Atributo class: </b>este atributo es mas flexible y puede ser asignado a varios elementos
+                            HTML en el documento que comparten un diseño similar.</li>
+                        <li><b>Elementos: </b>un selector de elementos en CSS es una regla que selecciona todos los
+                            elementos de un tipo especifico en el documento HTML. Es el selector mas basico y se refiere
+                            directamente al nombre de una etiqueta HTML.</li>
+                        <li><b>Pseudoclases - :nth-child(): </b>nos permite encontrar un hijo especifico.</li>
+                        <li><b>Pseudoclases - :first-child: </b>existen otras importantes pseudoclases relacionadas con
+                            esta ultima. hace referencia solo el primer hijo. no requieren palabras clave o parametros.
+                        </li>
+                        <li><b>Pseudoclases - :last-child: </b>referencia solo el ultimo hijo. no requieren palabras
+                            clave o parametros.</li>
+                        <li><b>Pseudoclases - :only-child: </b>este afecta un elemento siempre y cuando sea el unico
+                            hijo disponible. no requieren palabras clave o parametros.</li>
+                        <li><b>Pseudoclases - :not(): </b>nos permite declarar una excepcion. los estilos en la regla
+                            creada con est pseudoclase seran asignados a todo elemento excepto aquellos incluidos en la
+                            referencia entre parentesis.</li>
+                        <li><b>Selector de atributo: </b>selecciona elementos HTML en funcion de la presencia o el valor
+                            de uno de sus atributos. Esto permite aplicar estilos a los elementos que tienen un atributo
+                            especifico, o cuyo atributo tiene un valor determinado.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Apuntes de la clase</h2>
+                <div class="texto2">
+                    <p>El atributo id se utiliza para identificar de manera única a un elemento en un documento HTML.
+                    </p>
+                    <p>El atributo class permite agrupar varios elementos que comparten un diseño o comportamiento
+                        similar. Su flexibilidad permite asignar el mismo valor de class a múltiples elementos, lo que
+                        facilita la aplicación de estilos coherentes a través de diferentes partes de un documento.</p>
+                    <p>Los selectores de elementos en CSS permiten seleccionar todos los elementos de un tipo específico
+                        en el documento HTML.</p>
+                    <p>Las pseudoclases son selectores que permiten aplicar estilos a elementos en función de su estado
+                        o posición en el documento.</p>
+                    <p>El selector de atributo permite aplicar estilos a elementos basándose en la presencia o valor de
+                        uno de sus atributos. </p>
+                </div>
+                <div class="imagen">
+                    <img src="images/referencias.png" alt="" width="550px">
+                </div>
+            </div>
+            <footer>
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    <p>Los atributos id y class, junto con los selectores y pseudoclases, son herramientas esenciales en
+                        CSS para identificar y aplicar estilos a los elementos en un documento HTML. Estos conceptos
+                        permiten una mayor flexibilidad y control en el diseño web.</p>
+                </div>
+            </footer>
+        </section>
+        <section>
+            <div class="titulo">
+                <h1 id="tema6">°❀⋆.ೃ࿔*:･ Carrera universitaria ･:*ೃ࿔.⋆❀°</h1>
+                <a href="#inicio">Volver al inicio</a>
+                <br><br>
+            </div>
+            <div class="izquierda">
+                <h2>Imagenes</h2>
+                <div class="texto1 carrera">
+                    <img src="images/meta.jpg" alt="">
+                    <img src="images/yo.jpg" alt="">
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Imagenes</h2>
+                <div class="texto2 carrera">
+                    <img id="carrera" src="images/carrera.jpg" alt="" height="425px">
+                    <img id="carrera" src="images/carrera botargas.jpg" alt="" height="425px">
+                </div>
+                <div class="imagen">
+                    <img src="images/cancha.jpeg" alt="" height="325px">
+                </div>
+            </div>
+            <footer>
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    <p>Estuvo chida la carrera, si hubiera aguantado la de 5km, pero no gane nada.</p>
+                </div>
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>
